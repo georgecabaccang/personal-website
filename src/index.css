@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #040016;
+}
+
+.primary {
+    color: #d6a13d;
+}
+
+h1 {
+    font-size: 4rem;
+    color: #dddddd;
+}
+
+.text-primary {
+    font-size: 1.75rem;
+    color: #dddddd;
+}
+
+.text-secondary {
+    font-size: 1.25rem;
+    color: #9da6c1;
+}
