@@ -3,25 +3,79 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: InterLight;
+    src: url(./fonts/inter/Inter-Light.ttf) format("trueType");
+}
+
+@font-face {
+    font-family: InterExtraLight;
+    src: url(./fonts/inter/Inter-ExtraLight.ttf) format("trueType");
+}
+
+@font-face {
+    font-family: InterThin;
+    src: url(./fonts/inter/Inter-Thin.ttf) format("trueType");
+}
+
+@font-face {
+    font-family: InterRegular;
+    src: url(./fonts/inter/Inter-Regular.ttf) format("trueType");
+}
+
+@font-face {
+    font-family: InterMedium;
+    src: url(./fonts/inter/Inter-Medium.ttf) format("trueType");
+}
+
+@font-face {
+    font-family: InterSemiBold;
+    src: url(./fonts/inter/Inter-SemiBold.ttf) format("trueType");
+}
+
+@font-face {
+    font-family: InterBold;
+    src: url(./fonts/inter/Inter-Bold.ttf) format("trueType");
+}
+
 body {
+    letter-spacing: 0.027rem;
     background-color: #040016;
+}
+
+h1,
+.text-primary {
+    font-family: InterSemiBold;
+    font-size: 4rem;
+    color: #dddddd;
 }
 
 .primary {
     color: #d6a13d;
 }
 
-h1 {
-    font-size: 4rem;
-    color: #dddddd;
-}
-
 .text-primary {
+    font-family: InterRegular;
     font-size: 1.75rem;
-    color: #dddddd;
 }
 
-.text-secondary {
-    font-size: 1.25rem;
+.text-secondary,
+.text-tertiary {
+    font-family: InterExtraLight;
+    font-size: 1rem;
     color: #9da6c1;
+}
+
+.text-tertiary {
+    font-size: 0.85rem;
+}
+
+a {
+    font-family: InterRegular;
+    transition: 0.1s;
+}
+
+a:hover {
+    color: #d6a13d;
+    cursor: pointer;
 }
