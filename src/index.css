@@ -40,18 +40,18 @@
 
 body {
     letter-spacing: 0.027rem;
-    background-color: #040016;
+    background-color: #121212;
 }
 
 h1,
 .text-primary {
     font-family: InterSemiBold;
     font-size: 4rem;
-    color: #dddddd;
+    color: #ccd6f6;
 }
 
 .primary {
-    color: #d6a13d;
+    color: #975f1b;
 }
 
 .text-primary {
@@ -61,7 +61,7 @@ h1,
 
 .text-secondary,
 .text-tertiary {
-    font-family: InterExtraLight;
+    font-family: InterRegular;
     font-size: 1rem;
     color: #9da6c1;
 }
@@ -76,6 +76,6 @@ a {
 }
 
 a:hover {
-    color: #d6a13d;
+    color: #975f1b;
     cursor: pointer;
 }
