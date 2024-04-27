@@ -39,6 +39,7 @@
 }
 
 body {
+    overflow: hidden;
     letter-spacing: 0.027rem;
     background-color: #121212;
 }
