@@ -1,0 +1,129 @@
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 90vw;
+    position: relative;
+}
+
+.border_holder_one,
+.border_holder_two,
+.border_holder_three,
+.border_holder_four {
+    display: flex;
+    flex: 49%;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    width: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+    transform: scale(1);
+    z-index: -10;
+    position: absolute;
+}
+
+.border_holder_one {
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid #5b3f1c24;
+    border-right: 1px solid #5b3f1c24;
+}
+
+.border_holder_two {
+    top: 0;
+    right: 0;
+    border-left: 1px solid #5b3f1c24;
+    border-bottom: 1px solid #5b3f1c24;
+}
+
+.border_holder_three {
+    bottom: 0;
+    left: 0;
+    border-top: 1px solid #5b3f1c24;
+    border-right: 1px solid #5b3f1c24;
+}
+
+.border_holder_four {
+    bottom: 0;
+    right: 0;
+    border-top: 1px solid #5b3f1c24;
+    border-left: 1px solid #5b3f1c24;
+}
+
+.container {
+    display: flex;
+    filter: drop-shadow(0 0 10px #975f1b34) drop-shadow(0 0 10px #975f1b34);
+    background: #121212;
+    border-radius: 0.9rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: flex-start;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+}
+
+.section_one,
+.section_two,
+.section_three,
+.section_four {
+    display: flex;
+    flex: 49%;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    cursor: pointer;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+    transform: scale(1);
+    z-index: 0;
+}
+
+.section_one {
+    border-bottom: 1px solid #5b3f1c24;
+    border-right: 1px solid #5b3f1c24;
+}
+
+.section_two {
+    border-left: 1px solid #5b3f1c24;
+    border-bottom: 1px solid #5b3f1c24;
+}
+
+.section_three {
+    border-top: 1px solid #5b3f1c24;
+    border-right: 1px solid #5b3f1c24;
+}
+
+.section_four {
+    border-top: 1px solid #5b3f1c24;
+    border-left: 1px solid #5b3f1c24;
+}
+
+.section_one:hover,
+.section_two:hover,
+.section_three:hover,
+.section_four:hover {
+    z-index: 10;
+    transition: 0.2s;
+    transition-timing-function: ease-in;
+    filter: drop-shadow(0 0 1rem #975f1b66);
+    background: #5b3f1c;
+    transform: scale(1.5);
+}
+
+.section_one:hover {
+    border-top-left-radius: 0.9rem;
+}
+.section_two:hover {
+    border-top-right-radius: 0.9rem;
+}
+.section_three:hover {
+    border-bottom-left-radius: 0.9rem;
+}
+.section_four:hover {
+    border-bottom-right-radius: 0.9rem;
+}
