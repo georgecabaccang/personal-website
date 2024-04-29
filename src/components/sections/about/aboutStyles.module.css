@@ -1,0 +1,18 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem 3rem;
+    text-align: start;
+    gap: 0.8rem;
+}
+
+.span {
+    color: #ce9958;
+    font-family: InterBold;
+    font-size: 1.1rem;
+}
+
+.name {
+    margin-left: -2px;
+}
