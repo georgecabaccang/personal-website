@@ -1,37 +1,41 @@
+import About from "../../sections/about/About";
 import styles from "./layout.module.css";
-
-const ABOUT = "about";
-const PROJECTS = "projects";
-const EXPERIENCE = "experience";
-const TOOLS = "tools";
+import { Sections } from "../../../utils/SectionsEnum";
+import ProjectList from "../../sections/projects/ProjectList";
+import ExperienceList from "../../sections/experience/ExperienceList";
+import SkillList from "../../sections/skills/SkillList";
 
 const SECTIONS = [
     {
-        name: ABOUT,
+        name: Sections.ABOUT,
+        component: <About />,
     },
     {
-        name: PROJECTS,
+        name: Sections.PROJECTS,
+        component: <ProjectList />,
     },
     {
-        name: EXPERIENCE,
+        name: Sections.EXPERIENCE,
+        component: <ExperienceList />,
     },
     {
-        name: TOOLS,
+        name: Sections.TOOLS,
+        component: <SkillList />,
     },
 ];
 
 export default function Layout() {
-    function handleSectionStyle(sectionName: string, isBorder: boolean) {
+    function handleSectionStyle(sectionName: Sections, isBorder: boolean) {
         let sectionStyle;
 
         switch (sectionName) {
-            case ABOUT:
+            case Sections.ABOUT:
                 sectionStyle = isBorder ? styles.border_holder_one : styles.section_one;
                 break;
-            case PROJECTS:
+            case Sections.PROJECTS:
                 sectionStyle = isBorder ? styles.border_holder_two : styles.section_two;
                 break;
-            case EXPERIENCE:
+            case Sections.EXPERIENCE:
                 sectionStyle = isBorder ? styles.border_holder_three : styles.section_three;
                 break;
             default:
@@ -53,7 +57,7 @@ export default function Layout() {
                 {SECTIONS.map((section, index) => {
                     return (
                         <div key={index} className={`${handleSectionStyle(section.name, false)}`}>
-                            <div>{section.name}</div>
+                            <div>{section.component}</div>
                         </div>
                     );
                 })}
