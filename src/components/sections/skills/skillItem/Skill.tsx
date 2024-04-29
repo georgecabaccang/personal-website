@@ -8,7 +8,7 @@ export default function Skill({ skill }: { skill: string }) {
             <div className={`${styles.arrow}`}>
                 <Arrow />
             </div>
-            <span className={`text-tertiary ${styles.text}`}>{skill}</span>
+            <span className={`${styles.text}`}>{skill}</span>
         </div>
     );
 }
