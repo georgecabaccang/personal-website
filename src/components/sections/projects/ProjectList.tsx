@@ -64,7 +64,13 @@ export default function ProjectList() {
             <span className={styles.title}>Some things I've built:</span>
             <ul className={styles.list}>
                 {PROJECTS.web.map((project, index) => {
-                    return <Project key={index} project={project} />;
+                    return (
+                        <Project key={index}>
+                            <Project.Image>{project.thumbnail}</Project.Image>
+                            <Project.Title>{project.title}</Project.Title>
+                            <Project.Description>{project.description}</Project.Description>
+                        </Project>
+                    );
                 })}
             </ul>
         </div>
