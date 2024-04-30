@@ -38,6 +38,10 @@
     src: url(./fonts/inter/Inter-Bold.ttf) format("trueType");
 }
 
+html {
+    overflow: auto;
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -88,8 +92,11 @@ a:hover {
     cursor: pointer;
 }
 
-.section_global {
-    padding: 2rem 3rem;
+.section_global_container {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 3em;
     height: 80%;
     width: 100%;
+    gap: 0.8em;
 }

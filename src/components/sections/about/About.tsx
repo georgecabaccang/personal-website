@@ -3,7 +3,7 @@ import styles from "./aboutStyles.module.css";
 
 export default function About() {
     return (
-        <div className={`${styles.container} section_global`}>
+        <div className={`section_global_container`}>
             <span className={`primary text-secondary ${styles.span}`}>Hi, my name is</span>
             <h1 className={styles.name}>George Alfred Cabaccang.</h1>
             <p className="text-tertiary">
