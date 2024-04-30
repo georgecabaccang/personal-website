@@ -108,8 +108,9 @@
     transition: 0.2s;
     transition-timing-function: ease-in;
     filter: drop-shadow(0 0 1rem #975f1b66);
-    background: #5b3f1c;
+    background: #121212;
     transform: scale(1.5);
+    cursor: auto;
 }
 
 .section_one:hover {
