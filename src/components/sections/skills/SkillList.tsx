@@ -11,8 +11,8 @@ export default function SkillList() {
             <ul className={styles.list}>
                 {SKILLS.map((skill, index) => {
                     return (
-                        <li className={styles.list_item}>
-                            <Skill key={index} skill={skill} />
+                        <li key={index} className={styles.list_item}>
+                            <Skill skill={skill} />
                         </li>
                     );
                 })}

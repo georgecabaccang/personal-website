@@ -49,15 +49,20 @@ export default function Layout() {
     return (
         <div className={styles.parent}>
             <div>
-                {SECTIONS.map((section) => {
-                    return <div className={`${handleSectionStyle(section.name, true)}`}></div>;
+                {SECTIONS.map((section, index) => {
+                    return (
+                        <div
+                            key={index}
+                            className={`${handleSectionStyle(section.name, true)}`}
+                        ></div>
+                    );
                 })}
             </div>
             <div className={styles.container}>
                 {SECTIONS.map((section, index) => {
                     return (
                         <div key={index} className={`${handleSectionStyle(section.name, false)}`}>
-                            <div>{section.component}</div>
+                            {section.component}
                         </div>
                     );
                 })}
