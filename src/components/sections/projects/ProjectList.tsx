@@ -60,7 +60,7 @@ const PROJECTS = {
 
 export default function ProjectList() {
     return (
-        <div className={`${styles.container} section_global`}>
+        <div className={`section_global_container`}>
             <span className={styles.title}>Some things I've built:</span>
             <ul className={styles.list}>
                 {PROJECTS.web.map((project, index) => {
