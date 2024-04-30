@@ -102,10 +102,10 @@ a:hover {
 .section_global_container {
     display: flex;
     flex-direction: column;
-    padding: 2rem 3em;
+    padding: 0 2rem;
     height: 80%;
     width: 100%;
-    gap: 0.8em;
+    gap: 0.1em;
 }
 
 img,
