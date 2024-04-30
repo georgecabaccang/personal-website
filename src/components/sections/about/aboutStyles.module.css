@@ -1,9 +1,6 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    padding: 1rem 3rem;
-    text-align: start;
     gap: 0.8rem;
 }
 

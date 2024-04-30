@@ -87,3 +87,9 @@ a:hover {
     color: #975f1b;
     cursor: pointer;
 }
+
+.section_global {
+    padding: 2rem 3rem;
+    height: 80%;
+    width: 100%;
+}
