@@ -91,12 +91,14 @@ h1,
 
 a {
     font-family: InterRegular;
-    transition: 0.1s;
+    text-decoration: none;
+    color: inherit;
 }
 
 a:hover {
     color: #975f1b;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .section_global_container {
