@@ -3,7 +3,7 @@ import styles from "./layout.module.css";
 import { Sections } from "../../../utils/SectionsEnum";
 import ProjectList from "../../sections/projects/ProjectList";
 import ExperienceList from "../../sections/experience/ExperienceList";
-import SkillList from "../../sections/skills/SkillList";
+import ToolList from "../../sections/tools/ToolList";
 
 const SECTIONS = [
     {
@@ -20,7 +20,7 @@ const SECTIONS = [
     },
     {
         name: Sections.TOOLS,
-        component: <SkillList />,
+        component: <ToolList />,
     },
 ];
 
