@@ -9,7 +9,12 @@ export default function Project({ project }: { project: ProjectType }) {
     return (
         <a href={project.link} target="_blank">
             <div className={styles.project}>
-                <Project.Image thumbnail={project.thumbnail} type={project.type} />
+                <Project.Image
+                    thumbnail={project.thumbnail}
+                    alt={`${project.title}.png`}
+                    compressedThumbnail={project.compressedThumbnail}
+                    type={project.type}
+                />
                 <div className={styles.text_group}>
                     <Project.Title>{project.title}</Project.Title>
                     <Project.Description>{project.description}</Project.Description>

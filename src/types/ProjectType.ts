@@ -3,6 +3,7 @@ type ProjectType = {
     title: string;
     techs: string[];
     thumbnail: string;
+    compressedThumbnail: string;
     type: string;
     link: string;
     description: string;

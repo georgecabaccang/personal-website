@@ -1,8 +1,14 @@
 import Movies from "../../assets/thumbnails/movies-website.png";
+import CompressedMovies from "../../assets/thumbnails/compressed/compressed-movies-website.png";
 import Ecommerce from "../../assets/thumbnails/ecommerce-website.png";
+import CompressedEcommerce from "../../assets/thumbnails/compressed/compressed-ecommerce-website.png";
 import MatchingGame from "../../assets/thumbnails/matching-game-thumbnail.png";
+import CompressedMatchingGame from "../../assets/thumbnails/compressed/compressed-matching-game-thumbnail.png";
 import WeatherForecast from "../../assets/thumbnails/weatherForecast.png";
+import CompressedWeatherForecast from "../../assets/thumbnails/compressed/compressed-weatherForecast.png";
 import WorldTime from "../../assets/thumbnails/world-time.png";
+import CompressedWorldTime from "../../assets/thumbnails/compressed/compressed-world-time.png";
+
 import { MISC } from "./misc";
 
 const PROJECTS = [
@@ -16,6 +22,7 @@ const PROJECTS = [
             MISC.technologies.express,
         ],
         thumbnail: Movies,
+        compressedThumbnail: CompressedMovies,
         link: "https://front-movie-list.vercel.app/",
         type: MISC.projectType.web,
         description:
@@ -32,6 +39,7 @@ const PROJECTS = [
             MISC.technologies.express,
         ],
         thumbnail: Ecommerce,
+        compressedThumbnail: CompressedEcommerce,
         type: MISC.projectType.web,
         link: "https://fronte-commerce.vercel.app/",
         description:
@@ -48,6 +56,7 @@ const PROJECTS = [
             MISC.technologies.express,
         ],
         thumbnail: MatchingGame,
+        compressedThumbnail: CompressedMatchingGame,
         type: MISC.projectType.web,
         link: "https://matching-game-lovat.vercel.app/",
         description:
@@ -58,6 +67,7 @@ const PROJECTS = [
         title: "Weather Forecast App",
         techs: [MISC.technologies.js, MISC.technologies.ts, MISC.technologies.react],
         thumbnail: WeatherForecast,
+        compressedThumbnail: CompressedWeatherForecast,
         type: MISC.projectType.web,
         link: "https://weather-app-six-zeta-52.vercel.app/",
         description:
@@ -68,6 +78,7 @@ const PROJECTS = [
         title: "World Time",
         techs: [MISC.technologies.flutter],
         thumbnail: WorldTime,
+        compressedThumbnail: CompressedWorldTime,
         type: MISC.projectType.mobile,
         link: "https://drive.google.com/file/d/1S33xgX9b898PSNcx7tQVI_9YIGZFsMk6/view?usp=drive_link",
         description:
