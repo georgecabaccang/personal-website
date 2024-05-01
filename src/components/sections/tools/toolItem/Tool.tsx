@@ -1,3 +1,5 @@
-export default function Tool({ tool }: { tool: { name: string; image: string } }) {
-    return <div></div>;
+import styles from "./tool.module.css";
+
+export default function Tool({ tool }: { tool: string }) {
+    return <div className={styles.tool}>{tool}</div>;
 }
