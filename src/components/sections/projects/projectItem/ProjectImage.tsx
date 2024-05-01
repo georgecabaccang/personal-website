@@ -1,14 +1,13 @@
-import { ReactNode } from "react";
+import styles from "./projectStyles.module.css";
+import { MISC } from "../../../../utils/constants/misc";
 
-const imageStyles = {
-    image: {
-        border: "1px solid gray",
-        width: "128px",
-        height: "72px",
-        borderRadius: "0.18rem",
-    },
-};
+export default function ProjectImage({ thumbnail, type }: { thumbnail: string; type: string }) {
+    const appStyles =
+        type === MISC.projectType.web ? styles.thumbnail_web : styles.thumbnail_mobile;
 
-export default function ProjectImage({ children }: { children: ReactNode }) {
-    return <img style={imageStyles.image} src={children as string} />;
+    return (
+        <div className={styles.thumbnail_container}>
+            <img className={appStyles} src={thumbnail} />
+        </div>
+    );
 }
