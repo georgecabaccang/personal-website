@@ -1,0 +1,30 @@
+.experience_container {
+    display: flex;
+    padding: 1rem 1rem;
+    border-radius: 0.5rem;
+    transform: scale(0.9);
+    transition: 0.1s;
+    border-top: 0.01rem solid;
+    border-right: 0.1rem solid;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.01);
+    cursor: default;
+    gap: 1rem;
+}
+
+.experience_container:hover {
+    border-top: 0.01rem solid;
+    border-right: 0.05rem solid;
+    border-top-color: rgba(255, 255, 255, 0.3);
+    border-right-color: rgba(29, 29, 29, 0.9);
+    background: #ededed0e;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+    transition: 0.1s;
+}
+
+.experience_date {
+    min-width: 26%;
+    max-width: 26%;
+    font-size: 0.7rem;
+}
