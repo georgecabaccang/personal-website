@@ -13,5 +13,14 @@ export const MISC = {
         springBoot: "Spring Boot",
         flutter: "Flutter",
         python: "Python",
+        tailwind: "Tailwind CSS",
+        bootStrap: "Bootstrap",
+        html: "HTML5",
+        css: "CSS3",
+        postMan: "Postman",
+        mongoDB: "MongoDB",
+        mySQL: "MySQL",
+        vue: "Vue",
+        django: "Django"
     },
 };
