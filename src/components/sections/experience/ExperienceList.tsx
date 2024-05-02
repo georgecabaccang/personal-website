@@ -8,7 +8,11 @@ export default function ExperienceList() {
         <SectionCard>
             <List>
                 {EXPERIENCE.map((experience, index) => {
-                    return <Experience key={index} experience={experience} />;
+                    return (
+                        <List.Item>
+                            <Experience key={index} experience={experience} />
+                        </List.Item>
+                    );
                 })}
             </List>
         </SectionCard>
