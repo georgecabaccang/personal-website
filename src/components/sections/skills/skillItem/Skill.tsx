@@ -4,11 +4,11 @@ import styles from "./skillStyles.module.css";
 
 export default function Skill({ skill }: { skill: string }) {
     return (
-        <div className={styles.container}>
+        <div className={styles.skill_container}>
             <div className={`${styles.arrow}`}>
                 <Arrow />
             </div>
-            <span className={`${styles.text}`}>{skill}</span>
+            <span className={`list_item_body sub_body_text`}>{skill}</span>
         </div>
     );
 }

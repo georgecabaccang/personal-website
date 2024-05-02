@@ -1,16 +1,16 @@
 import EXPERIENCE from "../../../utils/constants/experience";
+import List from "../../ui/cards/list/List";
+import SectionCard from "../../ui/cards/section-container/SectionCard";
 import Experience from "./experienceItem/Experience";
-
-import styles from "./experienceListStyle.module.css";
 
 export default function ExperienceList() {
     return (
-        <div className={`section_global_container`}>
-            <ul className={styles.list}>
+        <SectionCard>
+            <List>
                 {EXPERIENCE.map((experience, index) => {
                     return <Experience key={index} experience={experience} />;
                 })}
-            </ul>
-        </div>
+            </List>
+        </SectionCard>
     );
 }
