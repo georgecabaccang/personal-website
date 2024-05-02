@@ -1,17 +1,25 @@
 import PROJECTS from "../../../utils/constants/projects";
+import List from "../../ui/cards/list/List";
+import SectionCard from "../../ui/cards/section-container/SectionCard";
 import Project from "./projectItem/Project";
 
 import styles from "./projectList.module.css";
 
 export default function ProjectList() {
     return (
-        <div className={`section_global_container`}>
+        <SectionCard>
             <span className={styles.title}>Some things I've built:</span>
-            <ul className={styles.list}>
+            <List>
                 {PROJECTS.map((project, index) => {
-                    return <Project key={index} project={project} />;
+                    return (
+                        <List.ItemWithLink link={project.link}>
+                            <List.ItemWithLink.Item>
+                                <Project key={index} project={project} />
+                            </List.ItemWithLink.Item>
+                        </List.ItemWithLink>
+                    );
                 })}
-            </ul>
-        </div>
+            </List>
+        </SectionCard>
     );
 }
