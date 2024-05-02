@@ -1,17 +1,19 @@
 import TOOLS from "../../../utils/constants/tools";
+import List from "../../ui/cards/list/List";
+import SectionCard from "../../ui/cards/section-container/SectionCard";
 import Tool from "./toolItem/Tool";
 
 import styles from "./toolList.module.css";
 
 export default function ToolList() {
     return (
-        <div className={`section_global_container`}>
+        <SectionCard>
             <span>Tools that I can use:</span>
-            <ul className={styles.list}>
+            <List styleOverride={styles.list_tools}>
                 {TOOLS.map((tool, index) => {
                     return <Tool key={index} tool={tool} />;
                 })}
-            </ul>
-        </div>
+            </List>
+        </SectionCard>
     );
 }

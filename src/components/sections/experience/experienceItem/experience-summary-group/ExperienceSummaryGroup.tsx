@@ -1,11 +1,10 @@
 import { ReactNode } from "react";
 import ExperienceHeader from "./experience-header/ExperienceHeader";
 import ExperienceSummary from "./experience-summary/ExperienceSummary";
-
-import style from "./group.module.css";
+import TextGroup from "../../../../ui/cards/text-group-container/TextGroup";
 
 export default function ExperienceSummaryGroup({ children }: { children: ReactNode }) {
-    return <div className={style.group_container}>{children}</div>;
+    return <TextGroup>{children}</TextGroup>;
 }
 
 ExperienceSummaryGroup.Header = ExperienceHeader;

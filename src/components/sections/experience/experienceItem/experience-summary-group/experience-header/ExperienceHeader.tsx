@@ -1,12 +1,10 @@
 import { ReactNode } from "react";
 import ExprienceTitle from "./ExprienceTitle";
 import ExperienceEmployer from "./ExperienceEmployer";
-
-import styles from "./header.module.css";
 import ExperienceDivider from "./ExperienceDivider";
 
 export default function ExperienceHeader({ children }: { children: ReactNode }) {
-    return <div className={styles.header_container}>{children}</div>;
+    return <div className={`list_item_header `}>{children}</div>;
 }
 
 ExperienceHeader.Title = ExprienceTitle;

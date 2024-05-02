@@ -1,13 +1,12 @@
 import ExperienceType from "../../../../types/ExperienceType";
+import ListItemCard from "../../../ui/cards/list/list-item/ListItem";
 import ExperienceDate from "./ExperienceDate";
 import ExperienceSummaryGroup from "./experience-summary-group/ExperienceSummaryGroup";
 import ExperienceHeader from "./experience-summary-group/experience-header/ExperienceHeader";
 
-import styles from "./experienceItemStyle.module.css";
-
 export default function Experience({ experience }: { experience: ExperienceType }) {
     return (
-        <div className={styles.experience_container}>
+        <ListItemCard>
             <ExperienceDate>{experience.date}</ExperienceDate>
 
             {/* START of Grouped text component*/}
@@ -27,6 +26,6 @@ export default function Experience({ experience }: { experience: ExperienceType 
                 {/* END of Summary of employement */}
             </ExperienceSummaryGroup>
             {/* END of Grouped text component*/}
-        </div>
+        </ListItemCard>
     );
 }
