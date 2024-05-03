@@ -137,3 +137,9 @@ a:hover {
     transition: 0.5s;
     background: rgba(255, 255, 255, 0.3);
 }
+
+@media screen and (min-width: 1280px) {
+    h1 {
+        font-size: 1.9rem;
+    }
+}
