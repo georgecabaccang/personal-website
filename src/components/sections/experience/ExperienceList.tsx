@@ -6,6 +6,7 @@ import Experience from "./experienceItem/Experience";
 export default function ExperienceList() {
     return (
         <SectionCard>
+            <SectionCard.Title>Experience</SectionCard.Title>
             <List>
                 {EXPERIENCE.map((experience, index) => {
                     return (

@@ -6,3 +6,14 @@
     width: 100%;
     gap: 0.1em;
 }
+
+.section__title {
+    font-size: 0.9rem;
+    font-family: InterSemiBold;
+}
+
+@media screen and (max-width: 1280px) {
+    .section__title {
+        font-size: 0.75rem;
+    }
+}
