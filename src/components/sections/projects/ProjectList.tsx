@@ -3,12 +3,10 @@ import List from "../../ui/cards/list/List";
 import SectionCard from "../../ui/cards/section-container/SectionCard";
 import Project from "./projectItem/Project";
 
-import styles from "./projectList.module.css";
-
 export default function ProjectList() {
     return (
         <SectionCard>
-            <span className={styles.title}>Some things I've built:</span>
+            <SectionCard.Title>Stuff I've built</SectionCard.Title>
             <List>
                 {PROJECTS.map((project, index) => {
                     return (

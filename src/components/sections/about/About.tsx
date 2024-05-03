@@ -5,11 +5,8 @@ import SkillList from "../skills/SkillList";
 export default function About() {
     return (
         <SectionCard>
+            <SectionCard.Title>Hi, my name is</SectionCard.Title>
             <TextGroup>
-                <TextGroup.Header>
-                    <span>Hi, my name is</span>
-                </TextGroup.Header>
-
                 <TextGroup.Body>
                     <h1>George Alfred Cabaccang.</h1>
                 </TextGroup.Body>

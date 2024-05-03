@@ -11,16 +11,9 @@
 .border_holder_two,
 .border_holder_three,
 .border_holder_four {
-    display: flex;
-    flex: 49%;
-    justify-content: center;
-    align-items: center;
     height: 50%;
     width: 50%;
-    cursor: pointer;
-    transition: 0.2s;
-    transition-timing-function: ease-in;
-    transform: scale(1);
+    cursor: none;
     z-index: -10;
     position: absolute;
 }
@@ -124,4 +117,41 @@
 }
 .section_four:hover {
     border-bottom-right-radius: 0.9rem;
+}
+
+@media screen and (max-width: 1280px) {
+    .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40rem;
+        width: 70rem;
+        position: relative;
+    }
+
+    .border_holder_one,
+    .border_holder_two,
+    .border_holder_three,
+    .border_holder_four {
+        height: 50%;
+        width: 50%;
+    }
+
+    .section_one:hover,
+    .section_two:hover,
+    .section_three:hover,
+    .section_four:hover {
+        z-index: 10;
+        transition: 0.2s;
+        transition-timing-function: ease-in;
+        filter: drop-shadow(0 0 1rem #975f1b66);
+        background: #121212;
+        transform: scale(1.2);
+        cursor: auto;
+    }
+
+    .container {
+        height: 80%;
+        width: 90%;
+    }
 }
