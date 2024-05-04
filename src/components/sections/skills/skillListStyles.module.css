@@ -11,3 +11,21 @@
     cursor: auto;
     flex: 40%;
 }
+
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .list_item {
+        cursor: auto;
+        font-size: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .list {
+        width: 100%;
+    }
+
+    .list_item {
+        cursor: auto;
+        flex: 100%;
+    }
+}
