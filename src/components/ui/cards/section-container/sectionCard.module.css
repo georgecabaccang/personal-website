@@ -12,13 +12,19 @@
     font-family: InterSemiBold;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .section__title {
         font-size: 0.75rem;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .section__title {
+        font-size: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
     .section__title {
         font-size: 1.1rem;
         font-weight: 700;
@@ -27,6 +33,20 @@
     .section_container {
         display: block;
         padding: 0 2rem;
+        height: 100%;
+        gap: 0.1em;
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .section__title {
+        font-size: 1rem;
+        font-weight: 700;
+    }
+
+    .section_container {
+        display: block;
+        padding: 0 1.5rem;
         height: 100%;
         gap: 0.1em;
     }

@@ -119,7 +119,7 @@
     border-bottom-right-radius: 0.9rem;
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
+@media screen and (min-width: 1200px) {
     .parent {
         display: flex;
         justify-content: center;
@@ -156,7 +156,44 @@
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .parent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35rem;
+        width: 55rem;
+        position: relative;
+    }
+
+    .border_holder_one,
+    .border_holder_two,
+    .border_holder_three,
+    .border_holder_four {
+        height: 50%;
+        width: 50%;
+    }
+
+    .section_one:hover,
+    .section_two:hover,
+    .section_three:hover,
+    .section_four:hover {
+        z-index: 10;
+        transition: 0.2s;
+        transition-timing-function: ease-in;
+        filter: drop-shadow(0 0 1rem #975f1b66);
+        background: #121212;
+        transform: scale(1.2);
+        cursor: auto;
+    }
+
+    .container {
+        height: 80%;
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1023px) {
     .parent {
         display: flex;
         height: 100vh;
@@ -171,6 +208,52 @@
         top: 0;
         filter: drop-shadow(0 0 10px #975f1b00) drop-shadow(0 0 10px #975f1b00);
         padding: 6rem 1rem;
+        height: auto;
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .border_holder_one,
+    .border_holder_two,
+    .border_holder_three,
+    .border_holder_four {
+        display: none;
+    }
+
+    .section_one,
+    .section_two,
+    .section_three,
+    .section_four {
+        height: auto;
+        display: block;
+        border: 0px;
+        width: 100%;
+    }
+
+    .section_one:hover,
+    .section_two:hover,
+    .section_three:hover,
+    .section_four:hover {
+        transform: scale(1);
+        filter: drop-shadow(0 0 1rem #975f1b00);
+    }
+}
+
+@media screen and (max-width: 639px) {
+    .parent {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        height: 100dvh;
+        width: 100dvw;
+        padding: 0 0;
+    }
+
+    .container {
+        position: absolute;
+        top: 0;
+        filter: drop-shadow(0 0 10px #975f1b00) drop-shadow(0 0 10px #975f1b00);
+        padding: 2rem 0;
         height: auto;
         width: 100%;
         gap: 3rem;
