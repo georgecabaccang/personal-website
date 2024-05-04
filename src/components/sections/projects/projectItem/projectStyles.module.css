@@ -19,7 +19,7 @@
     border-radius: 0.18rem;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
     .thumbnail_container {
         display: flex;
         justify-content: center;

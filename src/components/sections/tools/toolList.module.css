@@ -7,9 +7,16 @@
     margin-top: 1rem;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
     .list_tools {
         font-size: 0.5rem;
         margin-top: 0.7rem;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .list_tools {
+        font-size: 0.7rem;
+        margin-top: unset;
     }
 }
