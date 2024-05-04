@@ -4,4 +4,13 @@
     background: #975f1b31;
     font-weight: 700;
     border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .tool {
+        padding: 0 0.9rem;
+    }
 }
