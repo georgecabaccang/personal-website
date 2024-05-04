@@ -41,3 +41,24 @@
         box-shadow: none;
     }
 }
+
+@media screen and (max-width: 639px) {
+    .list_item {
+        flex-direction: column;
+        padding: 0 0;
+        width: 100%;
+        transform: scale(1);
+        border-top: none;
+        border-right: none;
+        background: none;
+        box-shadow: none;
+        gap: 0.7rem;
+    }
+
+    .list_item:hover {
+        border-top: none;
+        border-right: none;
+        background: none;
+        box-shadow: none;
+    }
+}

@@ -11,3 +11,14 @@
     cursor: auto;
     flex: 40%;
 }
+
+@media screen and (max-width: 639px) {
+    .list {
+        width: 100%;
+    }
+
+    .list_item {
+        cursor: auto;
+        flex: 100%;
+    }
+}

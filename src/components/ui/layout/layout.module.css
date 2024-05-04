@@ -201,3 +201,49 @@
         filter: drop-shadow(0 0 1rem #975f1b00);
     }
 }
+
+@media screen and (max-width: 639px) {
+    .parent {
+        display: flex;
+        height: 100vh;
+        width: 100vw;
+        height: 100dvh;
+        width: 100dvw;
+        padding: 0 0;
+    }
+
+    .container {
+        position: absolute;
+        top: 0;
+        filter: drop-shadow(0 0 10px #975f1b00) drop-shadow(0 0 10px #975f1b00);
+        padding: 2rem 0;
+        height: auto;
+        width: 100%;
+        gap: 3rem;
+    }
+
+    .border_holder_one,
+    .border_holder_two,
+    .border_holder_three,
+    .border_holder_four {
+        display: none;
+    }
+
+    .section_one,
+    .section_two,
+    .section_three,
+    .section_four {
+        height: auto;
+        display: block;
+        border: 0px;
+        width: 100%;
+    }
+
+    .section_one:hover,
+    .section_two:hover,
+    .section_three:hover,
+    .section_four:hover {
+        transform: scale(1);
+        filter: drop-shadow(0 0 1rem #975f1b00);
+    }
+}

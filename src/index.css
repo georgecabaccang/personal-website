@@ -151,3 +151,16 @@ a:hover {
         overflow-x: hidden;
     }
 }
+
+@media screen and (max-width: 639px) {
+    body {
+        display: block;
+        overflow-y: auto;
+        overflow-x: hidden;
+        letter-spacing: 0.01rem;
+    }
+
+    h1 {
+        font-size: 1.9rem;
+    }
+}

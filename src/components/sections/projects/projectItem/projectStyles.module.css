@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     min-width: 19%;
-    max-width: 19%;
+
     height: auto;
 }
 
@@ -18,4 +18,11 @@
     width: auto;
     height: 100px;
     border-radius: 0.18rem;
+}
+
+@media screen and (max-width: 639px) {
+    .thumbnail_container {
+        min-width: 10rem;
+        max-width: 10rem;
+    }
 }

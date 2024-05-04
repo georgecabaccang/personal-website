@@ -20,3 +20,10 @@
         margin-top: unset;
     }
 }
+
+@media screen and (max-width: 639px) {
+    .list_tools {
+        font-size: 0.7rem;
+        margin-top: unset;
+    }
+}

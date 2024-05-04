@@ -17,3 +17,11 @@
         font-size: 0.8rem;
     }
 }
+
+@media screen and (max-width: 639px) {
+    .experience_date {
+        min-width: 100%;
+        max-width: 100%;
+        font-size: 0.8rem;
+    }
+}
