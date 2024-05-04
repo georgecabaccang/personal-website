@@ -2,7 +2,6 @@
     display: flex;
     padding: 1rem 1rem;
     border-radius: 0.5rem;
-    transform: scale(0.9);
     transition: 0.1s;
     border-top: 0.01rem solid;
     border-right: 0.1rem solid;
@@ -10,7 +9,7 @@
     border-right-color: transparent;
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.01);
     cursor: pointer;
-    gap: 2rem;
+    gap: 1rem;
 }
 
 .list_item:hover {
@@ -23,6 +22,13 @@
     transition: 0.1s;
 }
 
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+    .list_item {
+        padding: 0.5rem 0.5rem;
+        gap: 1rem;
+    }
+}
+
 @media screen and (min-width: 640px) and (max-width: 1023px) {
     .list_item {
         padding: 0 0;
@@ -32,6 +38,7 @@
         border-right: none;
         background: none;
         box-shadow: none;
+        gap: 2rem;
     }
 
     .list_item:hover {
