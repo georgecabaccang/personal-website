@@ -23,7 +23,7 @@
     transition: 0.1s;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1023px) {
+@media screen and (min-width: 640px) and (max-width: 1023px) {
     .list_item {
         padding: 0 0;
         width: 100%;
