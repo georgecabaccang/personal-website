@@ -10,6 +10,7 @@
 .section__title {
     font-size: 0.9rem;
     font-family: InterSemiBold;
+    font-weight: bolder;
 }
 
 @media screen and (min-width: 1200px) {
@@ -41,7 +42,6 @@
 @media screen and (max-width: 639px) {
     .section__title {
         font-size: 1rem;
-        font-weight: 700;
     }
 
     .section_container {

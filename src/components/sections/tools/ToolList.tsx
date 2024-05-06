@@ -8,7 +8,7 @@ import styles from "./toolList.module.css";
 export default function ToolList() {
     return (
         <SectionCard>
-            <SectionCard.Title>Tools that I use</SectionCard.Title>
+            <SectionCard.Title>TOOLS</SectionCard.Title>
             <List styleOverride={styles.list_tools}>
                 {TOOLS.map((tool, index) => {
                     return <Tool key={index} tool={tool} />;

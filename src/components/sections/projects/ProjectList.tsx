@@ -6,7 +6,7 @@ import Project from "./projectItem/Project";
 export default function ProjectList() {
     return (
         <SectionCard>
-            <SectionCard.Title>Stuff I've built</SectionCard.Title>
+            <SectionCard.Title>PROJECTS</SectionCard.Title>
             <List>
                 {PROJECTS.map((project, index) => {
                     return (
