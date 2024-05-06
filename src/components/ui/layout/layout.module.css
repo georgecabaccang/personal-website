@@ -48,7 +48,7 @@
 
 .container {
     display: flex;
-    filter: drop-shadow(0 0 10px #975f1b34) drop-shadow(0 0 10px #975f1b34);
+    box-shadow: 0 0 10px 10px rgba(151, 95, 27, 0.2);
     background: #121212;
     border-radius: 0.9rem;
     flex-wrap: wrap;
@@ -100,7 +100,7 @@
     z-index: 10;
     transition: 0.2s;
     transition-timing-function: ease-in;
-    filter: drop-shadow(0 0 1rem #975f1b66);
+    box-shadow: 0 0 10px 10px rgba(151, 95, 27, 0.2);
     background: #121212;
     transform: scale(1.5);
     cursor: auto;
@@ -144,7 +144,7 @@
         z-index: 10;
         transition: 0.2s;
         transition-timing-function: ease-in;
-        filter: drop-shadow(0 0 1rem #975f1b66);
+        box-shadow: 0 0 10px 10px rgba(151, 95, 27, 0.2);
         background: #121212;
         transform: scale(1.2);
         cursor: auto;
@@ -181,7 +181,7 @@
         z-index: 10;
         transition: 0.2s;
         transition-timing-function: ease-in;
-        filter: drop-shadow(0 0 1rem #975f1b66);
+        box-shadow: 0 0 10px 10px rgba(151, 95, 27, 0.2);
         background: #121212;
         transform: scale(1.2);
         cursor: auto;
@@ -206,7 +206,7 @@
     .container {
         position: absolute;
         top: 0;
-        filter: drop-shadow(0 0 10px #975f1b00) drop-shadow(0 0 10px #975f1b00);
+        box-shadow: unset;
         padding: 6rem 1rem;
         height: auto;
         width: 100%;
@@ -235,7 +235,7 @@
     .section_three:hover,
     .section_four:hover {
         transform: scale(1);
-        filter: drop-shadow(0 0 1rem #975f1b00);
+        box-shadow: unset;
     }
 }
 
@@ -252,7 +252,7 @@
     .container {
         position: absolute;
         top: 0;
-        filter: drop-shadow(0 0 10px #975f1b00) drop-shadow(0 0 10px #975f1b00);
+        box-shadow: unset;
         padding: 2rem 0;
         height: auto;
         width: 100%;
@@ -281,6 +281,6 @@
     .section_three:hover,
     .section_four:hover {
         transform: scale(1);
-        filter: drop-shadow(0 0 1rem #975f1b00);
+        box-shadow: unset;
     }
 }
